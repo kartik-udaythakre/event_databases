@@ -1,4 +1,4 @@
-import pandas as test
+import pandas as pd
 # Define data using a dictionary
 data = {
     "Name": ["Alice", "Bob", "Charlie"],
