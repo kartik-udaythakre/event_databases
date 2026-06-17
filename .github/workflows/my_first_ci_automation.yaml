@@ -21,6 +21,8 @@ jobs:
       - name: Install dependencies
         run: pip install pandas
 
+      - name: run python job
+        run: python test.py
       - name: run pandas job
         run: python test_pandas.py
 
