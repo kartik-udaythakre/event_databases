@@ -1,7 +1,7 @@
 import pandas as pd
 # Define data using a dictionary
 data = {
-    "Name": ["TEST", "Bob", "Charlie"],
+    "Name": ["TEST", "TES@", "Charlie"],
     "Age": [25, 30, 35],
     "City": ["New York", "London", "Paris"]
 }
