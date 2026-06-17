@@ -1,0 +1,28 @@
+name: my_first_ci_automation
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  run_python_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: set up Python Kartik
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install pandas
+
+      - name: run python job
+        run: python test.py
+      - name: run pandas job
+        run: python test_pandas.py
+
